@@ -1,13 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  background: #0C111B;
+  ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bannerImg {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 250px;
+  padding: 0%;
+  margin: 0%;
+}
+
+.bannerImg img {
+  object-fit: cover;
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  background-color: #2B507C;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+
+header h3 {
+  font-weight: bolder;
+  color: #FFFFFF;
+  position: absolute;
+  left: 13%;
+  word-spacing: 1px;
+}
+
+#heading {
+  color: #FFFFFF;
+  padding-top: 10px;
+}
+
+#I {
+  color: #FF9966;
+  font-size: xx-large;
+}
+
+.material-icons.orange600 {
+  color: #FF9966;
+}
+
+.material-icons.orangewhite {
+  color: #FFFFFF;
+  background-color: #FF9966;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.material-icons.searchicon {
+  color: #FFFFFF;
+  background-color: #FF9966;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  position: relative;
+  right: 37px;
+  top: 5px;
+  padding: 0.5rem;
+}
+
+.search {
+  background-color: transparent;
+  border: 1px solid #5f5f5f;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+
+
+}
+
+.search:focus {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  margin-left: -5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5em;
+  justify-content: center;
+}
+
+.star {
+  color: gold;
+
+}
+
+.movie {
+  background: linear-gradient(0deg, #1A2B4A 0%, #2B507C 105.38%);
+  color: #FFFFFF;
+  margin: .8rem;
+  border-radius: 3px;
+  box-sizing: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.movie img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-info h5 {
+  margin: 0;
+  font-weight: lighter;
+  line-height: 1.2 rem;
+}
+
+/*media querys*/
+
+@media screen and (max-width:768px) {
+  #ctr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hdrttl {
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+
+  #srch {
+    width: 90%;
+    position: relative;
+    bottom: 0%;
+    padding: 0px;
+  }
+
+  .material-icons.searchicon {
+    color: #FFFFFF;
+    background-color: #FF9966;
+    height: 29px;
+    width: 35px;
+    border-radius: 5px;
+    position: absolute;
+    top: 62px;
+    padding: 0.4rem;
+  }
+
+  .grid {
+    display: grid;
+    margin-left: -5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5em;
+    justify-content: center;
+  }
 }
